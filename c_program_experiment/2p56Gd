@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=0;
+    int fine = 0;
+    printf("逾期天数\n");
+    scanf("%d",&a);
+    if(a<=5){
+        fine = 50*a;
+        printf("fine:%dpaise",fine);
+    }
+    else if(a>=6 && a<=10){
+        fine = a-5;
+        printf("fine:%drupee and 250 paise",fine );
+    }
+    else if (a>=11 && a<=30){
+        fine = (a-10)*5+5;
+        printf("fine:%drupee and 250 paise ",fine);
+    }
+
+
+    return 0;
+}
